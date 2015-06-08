@@ -6,10 +6,10 @@ OUTSIDE_ENABLE=1
 HOME_SECONDS=900        # 15 minutes
 OUTSIDE_SECONDS=300     # 5 minutes
 
-
-SSID="$(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | sed -e "s/^  *SSID: //p" -e d)"
 HOME_SSID="Bobbys"
 
+
+SSID="$(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | sed -e "s/^  *SSID: //p" -e d)"
 
 AM_I_HOME=0
 

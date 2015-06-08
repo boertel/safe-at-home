@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--key>NSWorkspace</key>
+	<dict>
+		<key>NSWorkspaceDidMountNotification</key>
+		<dict>
+			<key>command</key>
+			<string>/bin/echo "A new volume was mounted!"</string>
+		</dict>
+		<key>NSWorkspaceDidWakeNotification</key>
+		<dict>
+			<key>command</key>
+			<string>/bin/echo "The system woke from sleep!"</string>
+		</dict>
+		<key>NSWorkspaceWillSleepNotification</key>
+		<dict>
+			<key>command</key>
+			<string>/bin/echo "The system is about to go to sleep!"</string>
+		</dict>
+	</dict-->
+	<key>SystemConfiguration</key>
+	<dict>
+		<key>State:/Network/Global/IPv4</key>
+		<dict>
+            <key>command</key>
+            <string>/usr/local/sbin/safe-at-home</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
